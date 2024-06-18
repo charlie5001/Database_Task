@@ -1,0 +1,174 @@
+body {
+    margin:auto;
+    padding:50px;
+    color:blanchedalmond;
+    font-family: "Lato", sans-serif;
+    
+    
+}
+
+/* ---- Set up site grid ---- */
+
+.wrapper{
+    display:grid;
+    grid-template-columns: 15% 60% 25%;
+    grid-template-rows: 10%, 15%, 65%; 10%;
+    grid-template-areas: 
+        "logo banner banner"
+        "nav nav nav"
+        "main main side"
+        "footer footer footer";
+    grid-gap: 4px;
+    
+    
+}
+
+/* ---- End of site grid ---- */
+
+/* ---- Start of Area styling ---- */
+
+.box{
+    
+    padding:20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+
+.logo{
+    grid-area: logo;
+    padding:0;
+    background-color: white;
+    
+}
+
+.banner{
+    grid-area: banner;
+}
+   
+
+.main{
+    grid-area: main;
+}
+
+.side{
+    grid-area: side;
+}
+
+
+/* ---- Area colouring ---- */
+
+/* ---- main background ---*/
+.main{
+    
+    background-color: lavender;
+}
+
+.side{
+    background-color: peachpuff;
+}
+
+
+/* ---- logo, banner and footer background are the same ---- */
+.banner, .footer{
+    background-color:peachpuff;
+}
+
+/* ---- Font colour ---- */
+.logo, .banner, .footer{
+    color:mediumpurple;
+}
+.side, .nav, .main{
+    color:darkblue;
+    
+}
+
+
+/* ---- Area specifics ---- */
+
+
+.logo img{
+    max-width: 100%;
+    max-height: 100%;
+    padding:0;
+    border-radius: 10px;
+    
+}
+
+.nav{
+    grid-area: nav;
+    background-color: mediumpurple;  
+    font-size: 150%;
+    text-align: center;
+}
+
+
+
+/* links in side bar */
+a.side {
+    font-family: 'Ubuntu', 'sans-serif';
+    font-size: 100%;
+    text-decoration: none;
+}
+
+a.side:link, a.side:visited {color: #636263;}
+a.side:hover {color:#8a1737}
+
+
+
+
+/* Footer styling ----*/
+.footer{
+    grid-area: footer;
+    text-align: right;
+}
+
+/* ---- End of Area styling ---- */
+
+
+h1,h2,h3,h4{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/*Navigation Links */
+.nav a{font-weight: bold; }
+.nav a:link, .nav a:visited {color: darkblue;}
+
+
+/*Main Page links */
+.main a{font-weight: bold;}
+.main a:link, .main a:visited{color: darkblue;}
+.main a:hover{color:mediumpurple}
+
+/*Links in Side bar*/
+.side a{font-weight: bold; }
+.side a:link, .side a:visited {color: mediumpurple;}
+.side a:hover{color:darkblue; text-decoration: none;}
+
+.results {
+    border: black solid 2px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.search {
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 60%;
+}
+
+.rating .search {
+    width: 30%;
+    display: inline-block;
+}
+
+.submit {
+    font-family: FontAwesome;
+    width: 30%;
+}
+
+.search_criteria { 
+    color: lightblue;
+}
